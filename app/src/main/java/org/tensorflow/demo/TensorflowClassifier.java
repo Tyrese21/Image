@@ -40,9 +40,8 @@ class TensorFlowClassifier implements Classifier {
 
   // Class labels for PASCAL VOC, used because the current model (YOLO v1)
   // has been trained on this detection task.
-  private final String[] class_labels =  {"aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car",
-          "cat", "chair", "cow", "diningtable", "dog", "horse", "motorbike", "person",
-          "pottedplant", "sheep", "sofa", "train","tvmonitor"};
+  private final String[] class_labels =  {"aeroplane avion", "bicycle bicyclette bicicleta", "bird oiseau pajaro", "boat bateau barco", "bottle bouteille botella", "bus", "car voiture",          "cat chat", "chair chaise silla", "cow vache vaca", "diningtable table mesa", "dog chien perro", "horse cheval caballo", "motorbike moto motocicleta", "person personne persona",          "pottedplant plante planta", "sheep mouton oveja", "sofa", "train","tvmonitor télévision
+"};
 
   // jni native methods.
   public native int initializeTensorFlow(
